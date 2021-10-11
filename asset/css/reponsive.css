@@ -42,6 +42,12 @@
   .nav-group .bar-icon {
     display: block;
   }
+  .sidebar_menu{
+    display: block;
+  }
+  .active{
+    display: block;
+  }
 }
 
 /* Tablet */

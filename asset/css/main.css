@@ -1306,9 +1306,10 @@
   background: #fff;
   transform: translateX(-100%);
   border-radius: 2px;
+  display: none;
 }
 .active {
-  display: block;
+  display: none;
 }
 .active_sidebar {
   transform: translateX(0);
@@ -1321,7 +1322,7 @@
   width: 154px;
   position: relative;
 }
-.nav_sidebar--item::after {
+.nav_sidebar--item-head::after {
   content: "";
   border-top: 1px solid rgb(218, 218, 218);
   position: absolute;
@@ -1335,12 +1336,14 @@
 }
 .nav_sidebar--item {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 .nav_siderbar-link {
   text-decoration: none;
   display: block;
   font-size: 1.3rem;
-  margin-left: 10px;
+  margin-left: 6px;
   color: var(--text-color);
   -webkit-tap-highlight-color: transparent;
 }
@@ -1359,4 +1362,9 @@
   position: relative;
   top: -7px;
   left: 5px;
+}
+.nav_sidebar--item-icon {
+  font-size: 1.3rem;
+  color: #333;
+  margin-left: 11px;
 }
